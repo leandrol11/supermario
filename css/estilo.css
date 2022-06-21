@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.botao {
+    position: absolute;
+    top: 0;
+    margin: 5px;
+    background-color: rgb(35, 160, 35);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: rgba(35, 160, 35, 0.8);
+}
+
+.game-container {
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+    border-bottom: 15px solid rgb(35, 160, 35)
+}
+
+.tubo {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    /* Início animação movimento paisagem */
+    animation: animacao-tubo 1.5s infinite linear;
+}
+
+@keyframes animacao-tubo {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/* Fim animação movimento paisagem*/
+
+.mario {
+    width: 150px;
+    bottom: 0;
+    position: absolute;
+}
+
+/* Início animação pulo */
+.pulo {
+    animation: animacao-pulo 500ms infinite ease-out;
+}
+
+@keyframes animacao-pulo {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+/* Fim animação pulo */
+
+.nuvens {
+    width: 550px;
+    top: 50px;
+    position: absolute;
+    /* Início animação nuvens */
+    animation: animacao-nuvens 20s infinite linear;
+}
+
+@keyframes animacao-nuvens {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/* Fim animação nuvens */
