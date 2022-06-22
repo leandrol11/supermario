@@ -14,7 +14,6 @@ const loop = setInterval(() => {
     const posicaoTubo = tubo.offsetLeft;
     const alturaMario = +window.getComputedStyle(mario).bottom.replace("px", "");
 
-
     // Verificação colisão horizontal e altura
     if (posicaoTubo <= 125 && posicaoTubo > 0 && alturaMario < 80) {
         tubo.style.animation = "none";

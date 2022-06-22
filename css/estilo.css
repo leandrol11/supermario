@@ -4,15 +4,23 @@
     box-sizing: border-box;
 }
 
-.botao {
+.painel {
     position: absolute;
     top: 0;
     margin: 5px;
+    display: flex;
+}
+
+.botao,
+.contador {
+    color: white;
+    padding: 10px;
+}
+
+.botao {
     background-color: rgb(35, 160, 35);
     text-decoration: none;
-    color: white;
     cursor: pointer;
-    padding: 10px;
     border-radius: 5px;
 }
 
