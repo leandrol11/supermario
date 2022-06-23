@@ -1,8 +1,16 @@
 const mario = document.querySelector(".mario");
 const tubo = document.querySelector(".tubo");
+var contador = 0;
 
 // Gatilho comando pulo
 const pulo = () => {
+
+    // Placar
+    contador++;
+    console.log(contador);
+    document.getElementById("contador").innerHTML = contador
+    // Fim placar
+
     mario.classList.add("pulo")
     setTimeout(() => {
         mario.classList.remove("pulo");
@@ -29,5 +37,6 @@ const loop = setInterval(() => {
         clearInterval(loop);
     }
 }, 10)
+
 
 document.addEventListener("keydown", pulo);
