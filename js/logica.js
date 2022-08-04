@@ -35,6 +35,10 @@ const loop = setInterval(() => {
         mario.style.marginLeft = "50px";
 
         clearInterval(loop);
+        setTimeout(() => {
+            window.location.href = "gameover.html"
+        }, 300)
+
     }
 }, 10)
 
